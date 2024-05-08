@@ -15,7 +15,7 @@ dependencies:
   - name: logzio-k8s-telemetry
     version: "4.2.0"
     repository: "https://logzio.github.io/logzio-helm/"
-    condition: metricsOrTraces.enabled
+    condition: metricsOrTraces.enabled, applicationMetrics.enabled 
   - name: logzio-trivy
     version: "0.3.1"
     repository: "https://logzio.github.io/logzio-helm/"
